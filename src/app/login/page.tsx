@@ -23,7 +23,7 @@ const LoginPage: FC = () => {
 
         <p className="text-center">
           Don&#39; have an account?{" "}
-          <Link href="/singup" className="text-primary">
+          <Link href="/signup" className="text-primary">
             Signup
           </Link>
         </p>
