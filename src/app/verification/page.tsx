@@ -43,8 +43,7 @@ export default function Page() {
   const [registerUser, { isLoading: isRegistering }] =
     useRegisterUserMutation();
 
-  const [sendOtp, { isLoading: isSendingOtp, data: otpData, error: otpError }] =
-    useSendOtpMutation();
+  const [sendOtp, { isLoading: isSendingOtp }] = useSendOtpMutation();
 
   // Handle OTP submission
   const handleSubmit = async () => {
@@ -85,7 +84,8 @@ export default function Page() {
             Verify Your Email
           </CardTitle>
           <CardDescription className="text-gray-600 dark:text-gray-300">
-            We've sent a 6-digit code to your email. Enter it below to continue.
+            We&#39;ve sent a 6-digit code to your email. Enter it below to
+            continue.
           </CardDescription>
         </CardHeader>
 
